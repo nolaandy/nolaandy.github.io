@@ -116,6 +116,23 @@
                 -moz-box-shadow:    5px 6px 5px 0px rgba(50, 50, 50, 0.25);
                 box-shadow:         5px 6px 5px 0px rgba(50, 50, 50, 0.25);
             }
+                        .sepia img
+            {
+            	filter: sepia(1);
+            	-webkit-filter: sepia(1);
+            	-moz-filter: sepia(1);
+            	-o-filter: sepia(1);
+            	-ms-filter: sepia(1);
+            }
+            
+            .sepia img:hover
+            {
+            	filter: sepia(0);
+            	-webkit-filter: sepia(0);
+            	-moz-filter: sepia(0);
+            	-o-filter: sepia(0);
+            	-ms-filter: sepia(0);
+            }
             
         </style>
         
@@ -134,7 +151,7 @@
             
             <main>
                 <div class="sidebar">
-                    <div class="imageCircleWrap">
+                    <div class="imageCircleWrap sepia">
                       <img class="userAvatar" src="https://scontent-dfw1-1.xx.fbcdn.net/v/t1.0-9/10959676_10104229106204295_2347179442808411752_n.jpg?oh=385343300d142a9e5355d5f529d4527a&oe=57FA8BB6">
                     </div> <!-- end img Circle Wrap -->
                 </div>
