@@ -152,6 +152,16 @@
                 box-shadow:         2px 3px 2px 0px rgba(50, 50, 50, 0.25);
             }
             
+            img.userAvatar:active {
+                -webkit-box-shadow: 2px 3px 2px 0px rgba(50, 50, 50, 0.25);
+                -moz-box-shadow: 2px 3px 2px 0px rgba(50, 50, 50, 0.25);
+                box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0.25);
+                -webkit-transition-duration: 100ms;
+                -moz-transition-duration: 100ms;
+                -o-transition-duration: 100ms;
+                transition-duration: 100ms;
+            }
+            
             .sepia img
             {
             	filter: sepia(1);
@@ -163,6 +173,7 @@
                 -moz-transition-duration: 700ms;
                 -o-transition-duration: 700ms;
                 transition-duration: 700ms;
+
             }
             
             .sepia img:hover
@@ -173,6 +184,8 @@
             	-o-filter: sepia(0);
             	-ms-filter: sepia(0);
             }
+            
+
             
         </style>
         
