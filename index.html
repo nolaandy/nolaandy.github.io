@@ -1,1 +1,379 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><title>vue-2-boilerplate</title><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><link href=/static/css/app.d0b191d3b78667800417a75332beefb2.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.0932944c7be8225f7898.js></script><script type=text/javascript src=/static/js/vendor.9ef22a55c3aef55c48f2.js></script><script type=text/javascript src=/static/js/app.12721919dc295e4380c0.js></script></body></html>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/bootstrap/img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/bootstrap/img/apple-touch-icon-114x114.png">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+
+
+        <!-- CSS code from Bootply.com editor -->
+        
+        <style type="text/css">
+            
+
+.container-main {
+  width:70%;
+  margin-left: 15%;
+  display: flex;
+
+  }
+  
+.main-left {
+flex:2;
+background: #fbfbfb;
+display: flex;
+flex-direction: column;
+}
+    
+.main-right {
+    flex: 1;
+    background: ;
+    padding-top: 60px;
+    padding-left: 120px;
+}
+
+.section-wrapper {
+    display: flex;
+    align-items: baseline;
+}
+
+.section-heading {
+    flex: 1;
+    background-color: #f5f0f0;
+    margin: 15px;
+    text-align: right;
+    margin-bottom: 0px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 15px;
+}
+
+.section-content {
+  flex:2;
+  background:;
+  margin: 15px;
+  margin-left: 15px;
+  margin-bottom: 0px;
+}
+
+.personal-info {
+    background: ;
+    margin-bottom: 0px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 20px;
+}
+.recent-work-wrapper {
+margin-bottom: 15px;
+  }
+
+
+ h2 {
+    margin-top: 0px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+.recent-work-wrapper > h4 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 18px;
+    color: orange;
+    margin-top: 1px;
+    margin-bottom: 2px;
+}
+
+.skill-section-header {
+    margin-top: 0px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 900;
+    margin-bottom: 15px;
+    font-size: 80px;
+}
+
+.skill-title {
+ font-family: 'Fira Sans Extra Condensed', sans-serif;
+ font-weight: 900;
+ margin-bottom: 0px;
+ font-size: 21px;
+ margin-top: 15px;
+}
+
+.skill-level {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  margin-bottom: 0px;
+}
+
+.no-top-margin {
+    margin-top: 0px;
+}
+
+.bolt-right {
+    color:orange;
+}
+
+p {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    margin-bottom: 0px;
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+a {
+    color: #19adbd;
+    text-decoration: none;
+}
+
+.recent-work-wrapper > h4 > a {
+    color: orange;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1280px) {
+.container-main {
+    width: 80%;
+    margin-left: 10%;
+}
+}
+
+@media (max-width: 1105px) {
+.container-main {
+    width: 90%;
+    margin-left: 5%;
+}
+}
+
+@media (max-width: 1000px) {
+.skill-section-header {
+    font-size: 40px;
+}
+}
+
+@media (max-width: 850px) {
+.main-right {
+    flex: 1;
+    background: ;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+}
+
+@media (max-width: 720px) {
+    
+.section-wrapper {
+    flex-direction: column;
+}
+
+.section-heading {
+    flex-shrink: 1;
+}
+
+.section-content {
+    flex-grow: 4;
+}
+
+.bolt-left {
+    order:2;
+}
+
+.bolt-right {
+    order:1;
+    margin-top: 0px;
+    
+}
+
+
+.section-wrapper.top {
+    flex-direction: row;
+}
+
+
+
+.section-heading {
+   margin: 0px;
+     text-align: left;
+}
+
+}
+
+@media (max-width: 450px) {
+.container-main {
+    width: 100%;
+    margin-left: 0%;
+}
+
+.skill-section-header {
+    font-size: 18px;
+}
+
+.skill-title {
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.skill-level {
+    font-size: 12px;
+}
+
+}
+        </style>
+    </head>
+    
+    <!-- HTML code from Bootply.com editor -->
+    
+    <body>
+        
+<style>
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,800|Raleway:500');
+</style>
+
+<div class="container-main">
+  
+  
+  <div class="main-left">
+      
+      <div class="section-wrapper">
+      <div class="section-heading"></div>
+      <div class="section-content personal-info">
+                  <div class="recent-work-wrapper">
+          <h2>Andy Weilbaecher</h2>
+          <h4 class="no-top-margin">Web Designer</h4>
+          </div>
+    </div>
+    </div> <!-- /end section-wrapper -->
+    
+    <div class="section-wrapper top">
+      <div class="section-heading no-top-margin">mobile:</div>
+      <div class="section-content personal-info no-top-margin">504.982.1241</div>
+    </div> <!-- /end section-wrapper -->
+    
+    <div class="section-wrapper top">
+      <div class="section-heading no-top-margin">email:</div>
+      <div class="section-content personal-info no-top-margin"><a href="mailto:andyw504@gmail.com">andyw504@gmail.com</a></div>
+    </div> <!-- /end section-wrapper -->
+    
+    <div class="section-wrapper top">
+      <div class="section-heading no-top-margin">web:</div>
+      <div class="section-content personal-info no-top-margin"><a href="http://www.andy504.com" target="_blank">www.andy504.com</a></div>
+    </div> <!-- /end section-wrapper -->
+    
+      <div class="section-wrapper top">
+      <div class="section-heading bolt-left"></div>
+      <div class="section-content personal-info bolt-right"><i class="fa fa-flash"></i></div>
+    </div> <!-- /end section-wrapper -->
+    
+    <div class="section-wrapper">
+      <div class="section-heading">recent work:</div>
+      <div class="section-content">
+          
+        <div class="recent-work-wrapper">
+          <h2>Maypop Resaturant</h2>
+          <h4><a href="http://www.maypoprestaurant.com">www.maypoprestaurant.com</a></h4>
+          <p>Website design for the restaurant Maypop in New Orleans. </p>
+        </div>
+      
+        <div class="recent-work-wrapper">
+          <h2>Schollnick Advertising</h2>
+          <h4>2014-2016</h4>
+          <p>Designed websites, billboards, and print material for over a dozen clients. Worked on location for video shoots and photography.</p>
+        </div>  
+        
+        <div class="recent-work-wrapper">
+          <h2>Wax Bayou Hunting Club</h2>
+          <h4><a href="http://www.waxbayouhuntingclub.com">www.waxbayouhuntingclub.com</a></h4>
+          <p>Designed and coded this fully responsive website for a hunting club located in Morgan City, LA. The client wanted the site to be warm and feel like a "get-away" camp.</p>
+        </div>
+        
+        <div class="recent-work-wrapper">
+          <h2>Mopho New Orleans</h2>
+          <h4><a href="http://www.mophonola.com">www.mophonola.com</a></h4>
+          <p>Designed and coded this fully responsive website for Maypop Resaturant.</p>
+        </div>
+        
+        <div class="recent-work-wrapper">
+          <h2>Rum and the Lash</h2>
+          <h4><a href="http://www.rumandthelash.com">www.rumandthelash.com</a></h4>
+          <p>Designed and coded this fully responsive website for Maypop Resaturant.</p>
+        </div>
+      </div>
+    </div> <!-- /end section-wrapper -->
+    
+        <div class="section-wrapper">
+      <div class="section-heading">education:</div>
+      <div class="section-content personal-info">
+          <h2>Louisiana State University</h2>
+          <p>Major: Liberal Arts. Minor: Graphic Design</p>
+      </div>
+    </div> <!-- /end section-wrapper -->
+    
+        <div class="section-wrapper">
+      <div class="section-heading">interests:</div>
+      <div class="section-content personal-info">
+          <p>Photography, Web Design Trends, Typography, Vegetable Gardening, Kickball, Billiards, Cookling.</p>
+          
+      </div>
+    </div> <!-- /end section-wrapper -->
+    
+    
+    
+  </div>
+  
+  
+  
+  <div class="main-right">
+    
+  <div class="computer-skills-wrapper">
+    <h2 class="skill-section-header">Computer Skills</h2>
+    
+    
+    <h4 class="skill-title">Adobe Photoshop</h4>
+    <p class="skill-level">Advanced Level</p>
+    
+    <h4 class="skill-title">Adobe Illustrator</h4>
+    <p class="skill-level">Advanced Level</p>
+    
+    <h4 class="skill-title">HTML/CSS</h4>
+    <p class="skill-level">Advanced Level</p>
+    
+    <h4 class="skill-title">Javascript/Jquery</h4>
+    <p class="skill-level">Good working knowledge</p>    
+
+    <h4 class="skill-title">Responsive Web Design</h4>
+    <p class="skill-level">Good working knowledge of responsive frameworks such as Bootstrap and Foundation as well as other grid systems like Susy and using Flexbox.</p>
+    
+    <h4 class="skill-title">Sublime Text 2</h4>
+    <p class="skill-level">My code editor of choice.</p>
+    
+    <h4 class="skill-title">Content Management</h4>
+    <p class="skill-level">Strong knowledge of Wordpress/WooCommerce with good working knowledge of other CMSs such as Drupal, OpenCart, and Joomla!</p> 
+
+    <h4 class="skill-title">SEO/Analytics</h4>
+    <p class="skill-level">Good working knowledge</p> 
+
+    <h4 class="skill-title">Social Media/Advertising</h4>
+    <p class="skill-level">Advanced Level</p> 
+
+    <h4 class="skill-title">Stuff I'm Using or Looking Into</h4>
+    <p class="skill-level">React.JS, Vue.JS, Progressive Web Apps, Isomorphic Websites, Service Workers, WP Rest API, Github, Webpack, Docker, Gulp, Babel, JSON.</p> 
+
+
+    </div>
+  
+  </div>
+
+  
+</div>
+
+</body></html>
