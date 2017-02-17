@@ -23,13 +23,17 @@
         
         <style type="text/css">
             
+            body {
+    margin: 0px;
+}
 
 .container-main {
-  width:70%;
-  margin-left: 15%;
-  display: flex;
-
-  }
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
   
 .main-left {
 flex:2;
@@ -41,7 +45,6 @@ flex-direction: column;
 .main-right {
     flex: 1;
     background: ;
-    padding-top: 60px;
     padding-left: 120px;
 }
 
@@ -53,53 +56,59 @@ flex-direction: column;
 .section-heading {
     flex: 1;
     background-color: #f5f0f0;
-    margin: 15px;
     text-align: right;
     margin-bottom: 0px;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .section-content {
   flex:2;
   background:;
-  margin: 15px;
-  margin-left: 15px;
-  margin-bottom: 0px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .personal-info {
     background: ;
     margin-bottom: 0px;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
+    padding: 8px;
+    line-height: 20px;
 }
+
 .recent-work-wrapper {
-margin-bottom: 15px;
-  }
+    margin-bottom: 24px;
+}
 
 
- h2 {
+h2 {
     margin-top: 0px;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     font-weight: 900;
     margin-bottom: 0px;
+    font-size: 24px;
+    line-height: 30px;
 }
 
 .recent-work-wrapper > h4 {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     color: orange;
-    margin-top: 1px;
-    margin-bottom: 2px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    line-height: 20px;
 }
 
 .skill-section-header {
     margin-top: 0px;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     font-weight: 900;
-    margin-bottom: 15px;
-    font-size: 80px;
+    margin-bottom: 0px; 
+    font-size: 72px;
+    line-height: 90px;
 }
 
 .skill-title {
@@ -125,9 +134,9 @@ margin-bottom: 15px;
 
 p {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
-    margin-bottom: 0px;
-    font-size: 14px;
-    margin-top: 0px;
+    margin: 0px;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 a {
@@ -374,6 +383,17 @@ a {
   </div>
 
   
-</div>
+</div> <!-- /end container-main -->
+
+
+
+<style></style>
+
+
+<div class="container-contact">
+
+
+</div> <!-- /end container-contact -->
+
 
 </body></html>
