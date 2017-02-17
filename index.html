@@ -100,6 +100,7 @@ h2 {
     margin-top: 0px;
     margin-bottom: 5px;
     line-height: 20px;
+    font-weight: 300;
 }
 
 .skill-section-header {
@@ -133,6 +134,10 @@ h2 {
 
 .bolt-right {
     color:orange;
+}
+
+.btmMarg16 {
+  margin-bottom: 16px;
 }
 
 p {
@@ -195,6 +200,10 @@ a {
 
 .section-heading {
     flex-shrink: 1;
+    margin: 0px;
+    text-align: left;
+    margin-left: 16px;
+    margin-bottom: 8px;
 }
 
 .section-content {
@@ -215,10 +224,7 @@ a {
     flex-direction: row;
 }
 
-.section-heading {
-   margin: 0px;
-     text-align: left;
-}
+
 
 .skill-title {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
@@ -235,6 +241,30 @@ a {
 .container-main {
     width: 100%;
     margin-left: 0%;
+}
+
+.main-left {
+    flex: 3;
+    background: ;
+    padding-top: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.main-right {
+    flex: 2;
+    background: ;
+    padding-top: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.section-heading {
+    flex-shrink: 1;
+    margin: 0px;
+    text-align: left;
+    margin-left: 16px;
+    margin-bottom: 8px;
 }
 
 h2 {
@@ -270,7 +300,34 @@ h2 {
     line-height: 15px;
 }
 
+p {
+    font-size: 12px;
+    line-height: 15px;
 }
+
+}
+
+@media (max-width: 405px) {
+
+.container-main {
+    flex-direction: column;
+}
+
+.computer-skills-wrapper {
+    text-align: center;
+}
+
+.section-heading {
+    flex-shrink: 1;
+    margin: 0px;
+    text-align: left;
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+
+}
+
+
         </style>
     </head>
     
@@ -289,7 +346,7 @@ h2 {
       
       <div class="section-wrapper">
       <div class="section-heading"></div>
-      <div class="section-content personal-info">
+      <div class="section-content">
                   <div class="recent-work-wrapper">
           <h2>Andy Weilbaecher</h2>
           <h4 class="no-top-margin">Web Designer</h4>
@@ -312,7 +369,7 @@ h2 {
       <div class="section-content personal-info no-top-margin"><a href="http://www.andy504.com" target="_blank">www.andy504.com</a></div>
     </div> <!-- /end section-wrapper -->
     
-      <div class="section-wrapper top">
+    <div class="section-wrapper top">
       <div class="section-heading bolt-left"></div>
       <div class="section-content personal-info bolt-right"><i class="fa fa-flash"></i></div>
     </div> <!-- /end section-wrapper -->
@@ -323,7 +380,7 @@ h2 {
           
         <div class="recent-work-wrapper">
           <h2>Maypop Resaturant</h2>
-          <h4><a href="http://www.maypoprestaurant.com">www.maypoprestaurant.com</a></h4>
+          <h4><a href="http://www.maypoprestaurant.com" target="_blank">www.maypoprestaurant.com</a></h4>
           <p>Website design for the restaurant Maypop in New Orleans. </p>
         </div>
       
@@ -335,36 +392,38 @@ h2 {
         
         <div class="recent-work-wrapper">
           <h2>Wax Bayou Hunting Club</h2>
-          <h4><a href="http://www.waxbayouhuntingclub.com">www.waxbayouhuntingclub.com</a></h4>
+          <h4><a href="http://www.waxbayouhuntingclub.com" target="_blank">www.waxbayouhuntingclub.com</a></h4>
           <p>Designed and coded this fully responsive website for a hunting club located in Morgan City, LA. The client wanted the site to be warm and feel like a "get-away" camp.</p>
         </div>
         
         <div class="recent-work-wrapper">
           <h2>Mopho New Orleans</h2>
-          <h4><a href="http://www.mophonola.com">www.mophonola.com</a></h4>
+          <h4><a href="http://www.mophonola.com" target="_blank">www.mophonola.com</a></h4>
           <p>Designed and coded this fully responsive website for Maypop Resaturant.</p>
         </div>
         
         <div class="recent-work-wrapper">
           <h2>Rum and the Lash</h2>
-          <h4><a href="http://www.rumandthelash.com">www.rumandthelash.com</a></h4>
+          <h4><a href="http://www.rumandthelash.com" target="_blank">www.rumandthelash.com</a></h4>
           <p>Designed and coded this fully responsive website for Maypop Resaturant.</p>
         </div>
       </div>
     </div> <!-- /end section-wrapper -->
     
-        <div class="section-wrapper">
+        <div class="section-wrapper btmMarg16">
       <div class="section-heading">education:</div>
-      <div class="section-content personal-info">
+      <div class="section-content">
           <h2>Louisiana State University</h2>
           <p>Major: Liberal Arts. Minor: Graphic Design</p>
       </div>
     </div> <!-- /end section-wrapper -->
+
+
     
-        <div class="section-wrapper">
+        <div class="section-wrapper btmMarg16">
       <div class="section-heading">interests:</div>
-      <div class="section-content personal-info">
-          <p>Photography, Web Design Trends, Typography, Vegetable Gardening, Kickball, Billiards, Cookling.</p>
+      <div class="section-content">
+          <p>Photography, Web Design Trends, Typography, Vegetable Gardening, Kickball, Billiards, Cooking.</p>
           
       </div>
     </div> <!-- /end section-wrapper -->
