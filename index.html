@@ -405,7 +405,7 @@ input#email {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     margin-bottom: 0px;
     font-size: 48px;
-    line-height: 80px;
+    line-height: 60px;
     outline: none;
     width: 100%;
 }
@@ -426,6 +426,11 @@ input#name:active, input#name:focus {
     background-color: rgba(0, 0, 0, 0.03);
 }
 
+input#email:active, input#email:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
 textarea#message:active, textarea#message:focus {
     border: none;
     outline: none;
@@ -439,17 +444,24 @@ fieldset.pure-group {
 
 .close-btn {
     background: none;
-    border: none;
-    border-bottom: 8px solid white;
     color: white;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
-    margin-bottom: 0px;
-    font-size: 48px;
-    line-height: 80px;
+    font-size: 27px;
     outline: none;
     position: absolute;
-    top:5%;
-    right:5%;
+    top: 5%;
+    right: 5%;
+    height: 50px;
+    width: 50px;
+    border: 8px solid white;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: white;
+    color: orange;
 }
 
 button.button-success {
@@ -465,6 +477,13 @@ button.button-success {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     font-weight: 900;
     border: 8px solid white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+button.button-success:hover {
+    background-color: white;
+    color: orange;
 }
 
 .noscroll { 
@@ -518,15 +537,6 @@ input#email {
 }
 
 .close-btn {
-    background: none;
-    border: none;
-    border-bottom: 8px solid white;
-    color: white;
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
-    margin-bottom: 0px;
-    font-size: 48px;
-    line-height: 48px;
-    outline: none;
     position: absolute;
     top: 8px;
     right: 9px;
