@@ -344,19 +344,29 @@ p {
 <style>
 
 .contact-overlay {
-    background-color: rgba(255, 165, 0, 0.98);
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: rgba(255, 165, 0, 0.98);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.md-show  {
+  opacity: 1;
+  visibility: visible;
 }
 
 .form-wrapper {
-    max-width: 700px;
+  max-width: 630px;
+  z-index: 2000;
 }
 
 input#name {
@@ -442,8 +452,19 @@ fieldset.pure-group {
     right:5%;
 }
 
-.invisible {
-  display:none;
+button.button-success {
+    width: 50%;
+    height: 72px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 32px;
+    line-height: 40px;
+    text-decoration: underline;
+    margin-left: 25%;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 900;
+    border: 8px solid white;
 }
 
 .noscroll { 
@@ -515,10 +536,10 @@ input#email {
 
 
 
-
+ 
 </style>
 
-<div class="contact-overlay invisible" aria-hidden="true">
+<div class="contact-overlay" aria-hidden="true">
 
 <button class="close-btn">X</button>
 
@@ -543,20 +564,11 @@ input#email {
           <span id="email-invalid" style="visibility:hidden">
             Must be a valid email address</span>
         </fieldset>
-<!--
-        <fieldset class="pure-group">
-          <label for="color">Favourite Color: </label>
-          <input id="color" name="color" placeholder="green" />
-        </fieldset>
--->
-
-
 
         <button class="button-success pure-button button-xlarge">
           <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
 
       </form>
-
 
 
       <!-- Customise the Thankyou Message People See when they submit the form: -->
@@ -729,12 +741,12 @@ input#email {
 <script type="text/javascript">
 
 jQuery( ".close-btn" ).click(function() {
-jQuery( "div.contact-overlay" ).toggleClass( "invisible" );
+jQuery( "div.contact-overlay" ).toggleClass( "md-show" );
 jQuery( "body" ).toggleClass( "noscroll" );
 });
 
 jQuery( ".open-btn" ).click(function() {
-jQuery( "div.contact-overlay" ).toggleClass( "invisible" );
+jQuery( "div.contact-overlay" ).toggleClass( "md-show" );
 jQuery( "body" ).toggleClass( "noscroll" );
 });
 
