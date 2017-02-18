@@ -40,6 +40,7 @@ flex:2;
 background: #fbfbfb;
 display: flex;
 flex-direction: column;
+padding-top: 16px;
 }
     
 .main-right {
@@ -339,6 +340,242 @@ p {
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,800|Raleway:500');
 </style>
 
+
+<style>
+
+.contact-overlay {
+    background-color: rgba(255, 165, 0, 0.98);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper {
+    max-width: 700px;
+}
+
+input#name {
+    background: none;
+    border: none;
+    border-bottom: 8px solid white;
+    color: white;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    margin-bottom: 0px;
+    font-size: 48px;
+    line-height: 60px;
+    outline: none;
+    min-width: 100%;
+}
+
+
+textarea#message {
+    margin-top: 0px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 24px;
+    line-height: 31px;
+    background: none;
+    border: none;
+    color: white;
+    width: 100%;
+    min-height: 300px;
+    height: 50%;
+    outline: none;
+}
+
+input#email {
+    background: none;
+    border: none;
+    border-bottom: 8px solid white;
+    color: white;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    margin-bottom: 0px;
+    font-size: 48px;
+    line-height: 80px;
+    outline: none;
+    width: 100%;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: white !important;
+}
+
+
+
+input#name:active, input#name:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+textarea#message:active, textarea#message:focus {
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+fieldset.pure-group {
+    border: none;
+
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    border-bottom: 8px solid white;
+    color: white;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    margin-bottom: 0px;
+    font-size: 48px;
+    line-height: 80px;
+    outline: none;
+    position: absolute;
+    top:5%;
+    right:5%;
+}
+
+.invisible {
+  display:none;
+}
+
+.noscroll { 
+  overflow: hidden;
+}
+
+
+
+@media (max-width: 675px) {
+  input#name {
+    background: none;
+    border: none;
+    border-bottom: 8px solid white;
+    color: white;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    margin-bottom: 0px;
+    font-size: 32px;
+    line-height: 40px;
+    outline: none;
+    min-width: 100%;
+}
+
+textarea#message {
+    margin-top: 0px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 24px;
+    line-height: 31px;
+    background: none;
+    border: none;
+    /* border-left: 8px solid white; */
+    color: white;
+    width: 100%;
+    min-height: 200px;
+    outline: none;
+    min-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 8PX;
+}
+
+input#email {
+    font-size: 32px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.form-wrapper {
+    max-width: 100%;
+    padding: 16px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    border-bottom: 8px solid white;
+    color: white;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    margin-bottom: 0px;
+    font-size: 48px;
+    line-height: 48px;
+    outline: none;
+    position: absolute;
+    top: 8px;
+    right: 9px;
+}
+
+}
+
+
+
+
+</style>
+
+<div class="contact-overlay invisible" aria-hidden="true">
+
+<button class="close-btn">X</button>
+
+  <div class="form-wrapper">
+
+    <form id="gform" method="POST"
+      action="https://script.google.com/macros/s/AKfycbzbkC1R9T1oiMks1ey-IRWtmh_o-27PAIbFKf-O0ly6dBgc5Tb9/exec">
+        <!-- change the form action to your script url -->
+
+        <fieldset class="pure-group">
+          <input id="name" name="name" placeholder="What's your name?" />
+        </fieldset>
+
+        <fieldset class="pure-group">
+          <textarea id="message" name="message" rows="10"
+          placeholder="Tell us what's on your mind..."></textarea>
+        </fieldset>
+
+        <fieldset class="pure-group">
+          <input id="email" name="email" type="email" value=""
+          required placeholder="your.name@email.com"/>
+          <span id="email-invalid" style="visibility:hidden">
+            Must be a valid email address</span>
+        </fieldset>
+<!--
+        <fieldset class="pure-group">
+          <label for="color">Favourite Color: </label>
+          <input id="color" name="color" placeholder="green" />
+        </fieldset>
+-->
+
+
+
+        <button class="button-success pure-button button-xlarge">
+          <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+      </form>
+
+
+
+      <!-- Customise the Thankyou Message People See when they submit the form: -->
+      <div style="display:none;" id="thankyou_message">
+        <h2><em>Thanks</em> for contacting me!
+          I'll get back to you soon!</h2>
+      </div>
+
+      <!-- Submit the Form to Google Using "AJAX" -->
+      <script data-cfasync="false" type="text/javascript"
+      src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+      <!-- <script data-cfasync="false" type="text/javascript"
+      src="/form-submission-handler.js"></script> -->
+    <!-- END -->
+
+
+  </div>
+</div>
+
+
 <div class="container-main">
   
   
@@ -361,7 +598,7 @@ p {
     
     <div class="section-wrapper top">
       <div class="section-heading no-top-margin">email:</div>
-      <div class="section-content personal-info no-top-margin"><a href="mailto:andyw504@gmail.com">andyw504@gmail.com</a></div>
+      <div class="section-content personal-info no-top-margin"><a class="open-btn" href="mailto:andyw504@gmail.com">andyw504@gmail.com</a></div>
     </div> <!-- /end section-wrapper -->
     
     <div class="section-wrapper top">
@@ -487,5 +724,19 @@ p {
 
 </div> <!-- /end container-contact -->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+jQuery( ".close-btn" ).click(function() {
+jQuery( "div.contact-overlay" ).toggleClass( "invisible" );
+jQuery( "body" ).toggleClass( "noscroll" );
+});
+
+jQuery( ".open-btn" ).click(function() {
+jQuery( "div.contact-overlay" ).toggleClass( "invisible" );
+jQuery( "body" ).toggleClass( "noscroll" );
+});
+
+</script>
 
 </body></html>
