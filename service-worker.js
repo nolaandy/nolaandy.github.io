@@ -16,10 +16,10 @@ var dataCacheName = 'AndyzData';
 var cacheName = 'AndyzPWA';
 var filesToCache = [
   './index.html',
-  './src/static/css/*.css',
-  './src/static/css/*.map',
-  './src/static/js/*.js',
-  './src/static/js/*.map',
+  './static/css/app.cbd4cc70d0d31152559050637fe14cad.css',
+  './static/js/manifest.76dfcc9f56ff9d6eef4f.js',
+  './static/js/vendor.75de5f651352b827b21e.js',
+  './static/js/app.a8706876673ed61e6968.js',
   './favicon.ico'
 ];
 
