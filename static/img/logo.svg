@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="522" height="522" viewBox="0 0 522 522" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="c" x1="0%" y1="0%" y2="100%">
+      <stop stop-color="#02B3E4" offset="0%"/>
+      <stop stop-color="#02CCBA" offset="100%"/>
+    </linearGradient>
+    <rect id="b" width="512" height="512"/>
+    <filter id="a" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+    </filter>
+    <linearGradient id="d" x1="0%" y1="0%" y2="100%">
+      <stop stop-color="#00939A" offset="0%"/>
+      <stop stop-color="#59C9D5" offset="100%"/>
+    </linearGradient>
+    <path id="e" d="M365.697,256.85 C365.697,353.036 296.099,393.7 225.719,393.7 L144,393.7 L144,120 L229.629,120 C307.829,120 365.697,156.754 365.697,256.85 Z M309.393,256.85 C309.393,200.937 285.542,173.176 227.674,173.176 L198.74,173.176 L198.74,340.524 L225.719,340.524 C283.196,340.524 309.393,306.898 309.393,256.85 Z"/>
+    <filter id="f" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox">
+      <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"/>
+      <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+      <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.389464447 0" in="shadowInnerInner1"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(5 5)">
+    <use fill="black" filter="url(#a)" xlink:href="#b"/>
+    <use fill="url(#c)" xlink:href="#b"/>
+    <g>
+      <use fill="url(#d)" xlink:href="#e"/>
+      <use fill="black" filter="url(#f)" xlink:href="#e"/>
+    </g>
+  </g>
+</svg>
