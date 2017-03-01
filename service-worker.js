@@ -1,8 +1,13 @@
 let cahceTimestamp = '1486086904919'
-let cacheName = 'nvduoc-shell-v' + cahceTimestamp
-var dataCacheName = 'nvduoc-data-v' + cahceTimestamp
+let cacheName = 'mopho-shell-v' + cahceTimestamp
+var dataCacheName = 'mopho-data-v' + cahceTimestamp
 let filesToCache = [
-  '/'
+  '/',
+  '/index.html',
+  '/js/*.js',
+  '/js/*.map',
+  '/css/*.css',
+  '/css/*.map',
 ]
 
 self.addEventListener('activate', (e) => {
