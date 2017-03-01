@@ -1,1 +1,867 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Mopho Group | New Orleans</title><meta name=theme-color content=#02B3E4><meta name=apple-mobile-web-app-capable content=yes><meta name=mobile-web-app-capable content=yes><link rel=profile href=http://gmpg.org/xfn/11><link rel=icon type=image/png href=/static/img/logo_160.png><link rel=apple-touch-icon-precomposed sizes=114x114 href=/static/img/logo_114.png><link rel=apple-touch-icon-precomposed sizes=72x72 href=/static/img/logo_72.png><link rel=apple-touch-icon-precomposed href=/static/img/logo_57.png><link rel=manifest href=/manifest.json><noscript>Please enable Javascript in your browser.</noscript><link href=/static/css/app.367875df42148937df26955d8397fefd.css?17c7372d566b4a27b88c rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.02fe2eb24d45007d3367.js?17c7372d566b4a27b88c></script><script type=text/javascript src=/static/js/vendor.981cf9195f713c369062.js?17c7372d566b4a27b88c></script><script type=text/javascript src=/static/js/app.a2b124b98a10e444a603.js?17c7372d566b4a27b88c></script></body></html>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/bootstrap/img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/bootstrap/img/apple-touch-icon-114x114.png">
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+
+
+        <!-- CSS code from Bootply.com editor -->
+        
+        <style type="text/css">
+            
+            body {
+    margin: 0px;
+}
+
+.container-main {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+  
+.main-left {
+flex:2;
+background: #fbfbfb;
+display: flex;
+flex-direction: column;
+padding-top: 16px;
+}
+    
+.main-right {
+    flex: 1;
+    background: ;
+    padding-left: 120px;
+}
+
+.section-wrapper {
+    display: flex;
+    align-items: baseline;
+}
+
+.section-heading {
+    flex: 1;
+    background-color: #f5f0f0;
+    text-align: right;
+    margin-bottom: 0px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.section-content {
+  flex:2;
+  background:;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.personal-info {
+    background: ;
+    margin-bottom: 0px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 16px;
+    padding: 8px;
+    line-height: 20px;
+}
+
+.recent-work-wrapper {
+    margin-bottom: 24px;
+}
+
+
+h2 {
+    margin-top: 0px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 900;
+    margin-bottom: 0px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.recent-work-wrapper > h4 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 16px;
+    color: orange;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.skill-section-header {
+    margin-top: 0px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 900;
+    margin-bottom: 0px;
+    font-size: 64px;
+    line-height: 80px;
+}
+
+.skill-title {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 900;
+    margin-bottom: 0px;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 16px;
+}
+
+.skill-level {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    margin-bottom: 0px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.no-top-margin {
+    margin-top: 0px;
+}
+
+.bolt-right {
+    color:orange;
+}
+
+.btmMarg16 {
+  margin-bottom: 16px;
+}
+
+p {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    margin: 0px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+a {
+    color: #19adbd;
+    text-decoration: none;
+}
+
+.blinkingLink {
+
+      color: #19adbd;
+      animation: colorchange 1s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 3.5s infinite; /* Chrome and Safari */
+
+}
+
+@keyframes colorchange
+    {
+      0%   {background: rgb(0,0,0,0); padding:3px;}
+      50%  {background: #f5f0f0; padding:3px;}
+      100%   {background: rgb(0,0,0,0); padding:3px;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: rgb(0,0,0,0); padding:3px;}
+      50%  {background: #f5f0f0; padding:3px;}
+      100%   {background: rgb(0,0,0,0); padding:3px;}
+    }
+
+
+.recent-work-wrapper > h4 > a {
+    color: orange;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1280px) {
+.container-main {
+    width: 80%;
+    margin-left: 10%;
+}
+}
+
+@media (max-width: 1105px) {
+.container-main {
+    width: 90%;
+    margin-left: 5%;
+}
+}
+
+@media (max-width: 1000px) {
+.skill-section-header {
+    margin-top: 0px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 900;
+    margin-bottom: 0px;
+    font-size: 32px;
+    line-height: 40px;
+}
+}
+
+@media (max-width: 850px) {
+.main-right {
+    flex: 1;
+    background: ;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+}
+
+@media (max-width: 720px) {
+    
+.section-wrapper {
+    flex-direction: column;
+}
+
+.section-heading {
+    flex-shrink: 1;
+    margin: 0px;
+    text-align: left;
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+
+.section-content {
+    flex-grow: 4;
+}
+
+.bolt-left {
+    order:2;
+}
+
+.bolt-right {
+    order:1;
+    margin-top: 0px;
+    
+}
+
+.section-wrapper.top {
+    flex-direction: row;
+}
+
+
+
+.skill-title {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 900;
+    margin-bottom: 0px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 16px;
+}
+
+}
+
+@media (max-width: 450px) {
+.container-main {
+    width: 100%;
+    margin-left: 0%;
+}
+
+.main-left {
+    flex: 3;
+    background: ;
+    padding-top: 15px;
+    padding-left: 8px;
+    padding-right: 0px;
+}
+
+.main-right {
+    flex: 2;
+    background: ;
+    padding-top: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.section-heading {
+    flex-shrink: 1;
+    margin: 0px;
+    text-align: left;
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    margin-top: 0px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 900;
+    margin-bottom: 0px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.recent-work-wrapper > h4 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 15px;
+    font-weight: 300;
+}
+
+
+.skill-section-header {
+    font-size: 18px;
+}
+
+.skill-title {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.skill-level {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+p {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+}
+
+@media (max-width: 405px) {
+
+.container-main {
+    flex-direction: column;
+}
+
+.computer-skills-wrapper {
+    text-align: center;
+}
+
+.section-heading {
+    flex-shrink: 1;
+    margin: 0px;
+    text-align: left;
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+
+}
+
+
+        </style>
+    </head>
+    
+    <!-- HTML code from Bootply.com editor -->
+    
+    <body>
+        
+<style>
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,800|Raleway:500');
+</style>
+
+
+<style>
+
+.contact-overlay {
+  background-color: rgba(255, 165, 0, 0.98);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.md-show  {
+  opacity: 1;
+  visibility: visible;
+}
+
+.form-wrapper {
+  max-width: 630px;
+  z-index: 2000;
+}
+
+input#name {
+    background: none;
+    border: none;
+    border-bottom: 8px solid white;
+    color: white;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    margin-bottom: 0px;
+    font-size: 48px;
+    line-height: 60px;
+    outline: none;
+    min-width: 100%;
+}
+
+
+textarea#message {
+    margin-top: 0px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 24px;
+    line-height: 31px;
+    background: none;
+    border: none;
+    color: white;
+    width: 100%;
+    min-height: 300px;
+    height: 50%;
+    outline: none;
+}
+
+input#email {
+    background: none;
+    border: none;
+    border-bottom: 8px solid white;
+    color: white;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    margin-bottom: 0px;
+    font-size: 48px;
+    line-height: 60px;
+    outline: none;
+    width: 100%;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: white !important;
+}
+
+
+
+input#name:active, input#name:focus {
+    outline: none;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,000000+100&0+0,0.03+100 */
+background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.03) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.03) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.03) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#08000000',GradientType=1 ); /* IE6-9 */
+
+}
+
+input#email:active, input#email:focus {
+    outline: none;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,000000+100&0+0,0.03+100 */
+background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.03) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.03) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.03) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#08000000',GradientType=1 ); /* IE6-9 */
+
+}
+
+textarea#message:active, textarea#message:focus {
+    border: none;
+    outline: none;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,000000+100&0+0,0.03+100 */
+background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.03) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.03) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.03) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#08000000',GradientType=1 ); /* IE6-9 */
+
+}
+
+input::-webkit-input-placeholder {
+color: white !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: white !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: white !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: white !important;  
+}
+
+textarea::-webkit-input-placeholder {
+color: white !important;
+}
+ 
+textarea:-moz-placeholder { /* Firefox 18- */
+color: white !important;  
+}
+ 
+textarea::-moz-placeholder {  /* Firefox 19+ */
+color: white !important;  
+}
+ 
+textarea:-ms-input-placeholder {  
+color: white !important;  
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+fieldset.pure-group {
+    border: none;
+
+}
+
+.close-btn {
+    background: none;
+    color: white;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 27px;
+    outline: none;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    height: 50px;
+    width: 50px;
+    border: 8px solid white;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: white;
+    color: orange;
+}
+
+button.button-success {
+    width: 50%;
+    height: 72px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 32px;
+    line-height: 40px;
+    text-decoration: underline;
+    margin-left: 25%;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 900;
+    border: 8px solid white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+button.button-success:hover {
+    background-color: white;
+    color: orange;
+}
+
+.noscroll { 
+  overflow: hidden;
+}
+
+
+
+@media (max-width: 675px) {
+
+  .md-show  {
+  opacity: 1;
+  visibility: visible;
+  position:relative;
+  padding-top:50px;
+}
+
+.noscroll {
+  overflow:visible;
+}
+
+  input#name {
+    background: none;
+    border: none;
+    border-bottom: 8px solid white;
+    color: white;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    margin-bottom: 0px;
+    font-size: 32px;
+    line-height: 40px;
+    outline: none;
+    min-width: 100%;
+}
+
+textarea#message {
+    margin-top: 0px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 24px;
+    line-height: 31px;
+    background: none;
+    border: none;
+    /* border-left: 8px solid white; */
+    color: white;
+    width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+    outline: none;
+    min-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 8PX;
+}
+
+input#email {
+    font-size: 32px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.form-wrapper {
+    max-width: 100%;
+    padding: 16px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 9px;
+}
+
+.contact-overlay {
+    overflow-x: hidden;
+
+}
+
+}
+
+
+
+ 
+</style>
+
+<div class="contact-overlay" aria-hidden="true">
+
+<button class="close-btn">X</button>
+
+  <div class="form-wrapper">
+
+    <form id="gform" method="POST" onsubmit="parent.scrollTo(0, 0); return true"
+      action="https://script.google.com/macros/s/AKfycbzbkC1R9T1oiMks1ey-IRWtmh_o-27PAIbFKf-O0ly6dBgc5Tb9/exec">
+        <!-- change the form action to your script url -->
+
+        <fieldset class="pure-group">
+          <input id="name" name="name" placeholder="What's your name?" />
+        </fieldset>
+
+        <fieldset class="pure-group">
+          <textarea id="message" name="message" rows="10"
+          placeholder="Tell me what's on your mind..."></textarea>
+        </fieldset>
+
+        <fieldset class="pure-group">
+          <input id="email" name="email" type="email" value=""
+          required placeholder="your.name@email.com"/>
+          <span id="email-invalid" style="visibility:hidden">
+            Must be a valid email address</span>
+        </fieldset>
+
+        <button class="button-success pure-button button-xlarge">
+          <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+      </form>
+
+
+      <!-- Customise the Thankyou Message People See when they submit the form: -->
+      <div style="display:none;" id="thankyou_message">
+        <h2><em>Thanks</em> for contacting me!
+          I'll get back to you soon!</h2>
+      </div>
+
+      <!-- Submit the Form to Google Using "AJAX" -->
+      <script data-cfasync="false" type="text/javascript"
+      src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+      <!-- <script data-cfasync="false" type="text/javascript"
+      src="/form-submission-handler.js"></script> -->
+    <!-- END -->
+
+
+  </div>
+</div>
+
+
+<div class="container-main">
+  
+  
+  <div class="main-left">
+      
+      <div class="section-wrapper">
+      <div class="section-heading"></div>
+      <div class="section-content">
+                  <div class="recent-work-wrapper">
+          <h2>Andy Weilbaecher</h2>
+          <h4 class="no-top-margin">Web Designer</h4>
+          </div>
+    </div>
+    </div> <!-- /end section-wrapper -->
+    
+    <div class="section-wrapper top">
+      <div class="section-heading no-top-margin">mobile:</div>
+      <div class="section-content personal-info no-top-margin">504.982.1241</div>
+    </div> <!-- /end section-wrapper -->
+    
+    <div class="section-wrapper top">
+      <div class="section-heading no-top-margin">email:</div>
+      <div class="section-content personal-info no-top-margin"><a class="open-btn blinkingLink" href="#">andyw504@gmail.com</a></div>
+    </div> <!-- /end section-wrapper -->
+    
+    <div class="section-wrapper top">
+      <div class="section-heading no-top-margin">web:</div>
+      <div class="section-content personal-info no-top-margin"><a href="http://www.andy504.com" target="_blank">www.andy504.com</a></div>
+    </div> <!-- /end section-wrapper -->
+    
+    <div class="section-wrapper top">
+      <div class="section-heading bolt-left"></div>
+      <div class="section-content personal-info bolt-right"><i class="fa fa-flash"></i></div>
+    </div> <!-- /end section-wrapper -->
+    
+    <div class="section-wrapper">
+      <div class="section-heading">recent work:</div>
+      <div class="section-content">
+          
+        <div class="recent-work-wrapper">
+          <h2>Maypop Resaturant</h2>
+          <h4><a href="http://www.maypoprestaurant.com" target="_blank">www.maypoprestaurant.com</a></h4>
+          <p>Website design for the restaurant Maypop in New Orleans. Wordpress back-end using custom post types to make menus and content easily editable by the client.</p>
+        </div>
+      
+        <div class="recent-work-wrapper">
+          <h2>Schollnick Advertising</h2>
+          <h4>2014-2016</h4>
+          <p>Designed websites, billboards, print material, etc. for dozens of clients in the New Orleans area. Worked on location for video shoots and photography.</p>
+        </div>  
+
+        <div class="recent-work-wrapper">
+          <h2>Peter Finney Book Website</h2>
+          <h4><a href="http://www.petefinney.com" target="_blank">www.petefinney.com</a></h4>
+          <p>Responsive website for my late Grandfather's last book. Chronicals book reviews, speaking events, and other media related to the book. Designed to have a similar feel as the book design.</p>
+        </div>
+
+        <div class="recent-work-wrapper">
+          <h2>Mopho New Orleans</h2>
+          <h4><a href="http://www.mophonola.com" target="_blank">www.mophonola.com</a></h4>
+          <p>Designed and coded this fully responsive website for Mopho in Mid City. Menu, press releases, and events are created and edited in the Wordpress back-end.</p>
+        </div>
+
+        <div class="recent-work-wrapper">
+          <h2>Wax Bayou Hunting Club</h2>
+          <h4><a href="http://www.waxbayouhuntingclub.com" target="_blank">www.waxbayouhuntingclub.com</a></h4>
+          <p>Website design for a hunting club located in Morgan City, LA. The client wanted the site to be warm and feel like a "get-away" camp. Fully responsive with a Wordpress back-end.</p>
+        </div>
+
+         <!--
+        <div class="recent-work-wrapper">
+          <h2>Rum and the Lash</h2>
+          <h4><a href="http://www.rumandthelash.com" target="_blank">www.rumandthelash.com</a></h4>
+          <p>Designed and coded this fully responsive website for Maypop Resaturant.</p>
+        </div>
+        -->
+
+      </div>
+    </div> <!-- /end section-wrapper -->
+    
+        <div class="section-wrapper btmMarg16">
+      <div class="section-heading">education:</div>
+      <div class="section-content">
+          <h2>Louisiana State University</h2>
+          <p>Major: Liberal Arts. Minor: Graphic Design</p>
+      </div>
+    </div> <!-- /end section-wrapper -->
+
+
+    
+        <div class="section-wrapper btmMarg16">
+      <div class="section-heading">interests:</div>
+      <div class="section-content">
+          <p>Photography, Web Design Trends, Typography, Vegetable Gardening, Kickball, Billiards, Cooking.</p>
+          
+      </div>
+    </div> <!-- /end section-wrapper -->
+    
+    
+    
+  </div>
+  
+  
+  
+  <div class="main-right">
+    
+  <div class="computer-skills-wrapper">
+    <h2 class="skill-section-header">Computer Skills</h2>
+    
+    <h4 class="skill-title">Adobe Photoshop</h4>
+    <p class="skill-level">Advanced Level</p>
+    
+    <h4 class="skill-title">Adobe Illustrator</h4>
+    <p class="skill-level">Advanced Level</p>
+    
+    <h4 class="skill-title">HTML/CSS</h4>
+    <p class="skill-level">Advanced Level</p>
+    
+    <h4 class="skill-title">Javascript/Jquery</h4>
+    <p class="skill-level">Good working knowledge</p>    
+
+    <h4 class="skill-title">Responsive Web Design</h4>
+    <p class="skill-level">Strong knowledge of responsive frameworks such as Bootstrap and Foundation as well as other grid systems like Susy and using Flexbox.</p>
+    
+    <h4 class="skill-title">Sublime Text 2</h4>
+    <p class="skill-level">My code editor of choice.</p>
+    
+    <h4 class="skill-title">Content Management</h4>
+    <p class="skill-level">Strong knowledge of Wordpress/WooCommerce with good working knowledge of other CMSs such as Drupal, OpenCart, and Joomla!</p> 
+
+    <h4 class="skill-title">SEO/Analytics</h4>
+    <p class="skill-level">Strong knowledge of SEO and Google Analytics</p> 
+
+    <h4 class="skill-title">Social Media/Advertising</h4>
+    <p class="skill-level">Strong knowledge of Facebook Advertising with good working knowledge of Google AdWords and how it integrates with YouTube.</p> 
+
+    <h4 class="skill-title">Stuff I'm Using or Looking Into</h4>
+    <p class="skill-level">React.JS, Vue.JS, Progressive Web Apps, Isomorphic Websites, Service Workers, WP Rest API, Github, Webpack, Docker, Gulp, Babel, JSON.</p> 
+
+
+    </div>
+  
+  </div>
+
+  
+</div> <!-- /end container-main -->
+
+
+
+<style></style>
+
+
+<div class="container-contact">
+
+
+</div> <!-- /end container-contact -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+jQuery( ".close-btn" ).click(function() {
+jQuery( "div.contact-overlay" ).toggleClass( "md-show" );
+jQuery( "body" ).toggleClass( "noscroll" );
+});
+
+jQuery( ".open-btn" ).click(function() {
+jQuery( "div.contact-overlay" ).toggleClass( "md-show" );
+jQuery( "body" ).toggleClass( "noscroll" );
+});
+
+</script>
+
+</body></html>
